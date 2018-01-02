@@ -1,9 +1,9 @@
 import util from 'util';
 
-import { toCamelCase } from 'Helpers/String';
+import { toCamelCase } from '../helpers/String';
 
 export function parseArgs(schema, argumentsArray) {
-    if(Object.prototype.toString.call( argumentsArray ) !== '[object Array]') {
+    if (Object.prototype.toString.call(argumentsArray) !== '[object Array]') {
         return [];
     }
 
@@ -11,9 +11,9 @@ export function parseArgs(schema, argumentsArray) {
 }
 
 export function parseArg(schema, argumentObject) {
-    if(typeof argumentObject !== 'object') {
+    if (typeof argumentObject !== 'object') {
         return null;
-    }   
+    }
 
     return {
         name: argumentObject.name,
@@ -23,7 +23,7 @@ export function parseArg(schema, argumentObject) {
 }
 
 export function parseArgType(schema, argumentTypeObject, typeSchema = null) {
-    typeSchema =  {
+    typeSchema = {
         isRequired: false,
         isArray: false,
         isObject: false,

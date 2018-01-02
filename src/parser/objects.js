@@ -1,7 +1,7 @@
 import util from 'util';
 
-import { toCamelCase } from 'Helpers/String';
-import { parseArg, parseArgs, parseArgType } from 'Parser/types';
+import { toCamelCase } from '../helpers/String';
+import { parseArg, parseArgs, parseArgType } from './types';
 
 export function parseQueryObject(schema, object) {
     const type = getObjectByName(schema, object.type.name);

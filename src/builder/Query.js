@@ -1,5 +1,5 @@
-import Variables from 'Builder/Variables';
-import SchemaObject from 'Builder/SchemaObject';
+import Variables from './Variables';
+import SchemaObject from './SchemaObject';
 
 export default class Query {
 

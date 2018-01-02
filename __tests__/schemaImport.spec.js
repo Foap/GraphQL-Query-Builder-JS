@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { expect } from 'chai';
 
-const { fetchSchema, readSchema, saveSchema } = require(__dirname + '/../../index.js');
+const { fetchSchema, readSchema, saveSchema } = global.process.app;
 
 describe('Schema import', function () {
     beforeEach(() => {

@@ -1,4 +1,4 @@
-import Variables from 'Builder/Variables';
+import Variables from './Variables';
 
 export default class SchemaObject {
 

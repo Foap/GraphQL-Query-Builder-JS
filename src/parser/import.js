@@ -3,7 +3,7 @@ import fs from 'fs';
 import { introspectionQuery } from 'graphql/utilities/introspectionQuery';
 import axios from 'axios';
 
-import { parseQueryObject, getObjects, parseObject, getInputObjects, parseInputObject } from 'Parser/objects';
+import { parseQueryObject, getObjects, parseObject, getInputObjects, parseInputObject } from './objects';
 
 let schema;
 

@@ -1,5 +1,5 @@
-import InputVariables from 'Builder/InputVariables';
-import SchemaObject from 'Builder/SchemaObject';
+import InputVariables from './InputVariables';
+import SchemaObject from './SchemaObject';
 
 export default class Mutation {
 

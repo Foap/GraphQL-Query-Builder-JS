@@ -1,7 +1,7 @@
 import fs from 'fs';
 import { expect } from 'chai';
 
-const { fetchSchema, WriteRequestSchema, Mutation } = require(__dirname + '/../../index.js');
+const { fetchSchema, WriteRequestSchema, Mutation } = global.process.app;
 
 fetchSchema(process.env.GRAPHQL_URL).then(schema => {
 
