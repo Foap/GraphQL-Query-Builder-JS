@@ -1,0 +1,32 @@
+{
+    "compact": true,
+    "presets": [
+        "es2015",
+        "stage-0"
+    ],
+    "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        [
+            "module-alias",
+            [
+                {
+                    "src": "./src/",
+                    "expose": "Root"
+                },
+                {
+                    "src": "./src/builder",
+                    "expose": "Builder"
+                },
+                {
+                    "src": "./src/parser",
+                    "expose": "Parser"
+                },
+                {
+                    "src": "./src/helpers",
+                    "expose": "Helpers"
+                }
+            ]
+        ]
+    ]
+}
